@@ -1,10 +1,10 @@
 /**
 Renders a Next.js page component that displays detailed information about a character, including their name, occupations, description, images, skills, and famous qoutes.
 @component
-@param {Object} props - The component props.
-@param {Object} props.params - The parameters passed to the page component.
-@param {string} props.params.slug - The slug of the character.
-@returns {JSX.Element} The rendered page component.
+@param {Object} props
+@param {Object} props.params
+@param {string} props.params.slug
+@returns {JSX.Element}
 */
 
 import { Container } from '@/components'
@@ -86,7 +86,7 @@ export default async function Page({ params }) {
             </ul>
         </>
       )}
-      {character_quotes && (
+      {/* {character_quotes && (
         <>
           <h2 className="text-xl font-bold">Famous Quotes</h2>
           <ul className="grid gap-5">
@@ -102,7 +102,7 @@ export default async function Page({ params }) {
             })}
           </ul>
         </>
-      )}
+      )} */}
     </Container>
   )
 }
